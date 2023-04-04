@@ -22,7 +22,16 @@ export default function App() {
               headerTintColor: "white",
             }}
           />
-          <Stack.Screen name="MealsOverview" component={MealOverviewScreen} />
+          <Stack.Screen
+            name="MealsOverview"
+            component={MealOverviewScreen}
+            // options={({ route, navigation }) => {
+            //   const catId = route.params.categoryId;
+            //   return {
+            //     title: catId,
+            //   };
+            // }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </>
